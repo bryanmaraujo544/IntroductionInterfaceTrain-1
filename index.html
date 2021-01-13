@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  
+  <title>Frontend Mentor | Project tracking intro component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header class="contain">
+    <nav class="navbar">
+      <img src="images/logo.svg" alt="">
+      <ul class="navbar_list">
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#" class="navbar_listGrey" id="navbar_point">.</a></li>
+        <li><a href="#" class="navbar_listGrey">Login</a></li>
+      </ul>
+      <label class="label" for="menu">
+        
+      </label>
+    
+      
+      
+    </nav>
+  
+    <div class="header_contain">
+      <div class="header_contain_text">
+        <p class="header_contain_text_upSub">
+          <span>New</span>
+          Monograph Dashboard
+        </p>
+      
+        <h1 class="header_contain_text_title">
+          Powerful insights into your team  
+        </h1>
+        <h2 class="header_contain_text_sub">
+          Project planning and time tracking for agile teams
+        </h2>
+        <div class="header_contain_text_buttons header_contain_text_upSub">
+          <a href="" class="first_button">Schedule a demo</a>
+          <a href="" class="second_button">to see a live preview</a>
+        </div>
+      </div>
+      <div class="header_contain_image">
+        
+      </div>
+    </div>
+  </header>
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+
+  <script>
+    
+      const label = document.querySelector(".label");
+
+
+      label.addEventListener('click', function(){
+        const navbar = document.querySelector(".navbar_list");
+        const navbarActive = "navbar_listActive";
+        const label = document.querySelector(".label");
+        
+        
+        if(navbar.classList.contains(navbarActive)){
+          navbar.classList.remove(navbarActive);
+          console.log("ola");
+          label.style.backgroundImage = "url(images/icon-hamburger.svg)";
+
+        }
+        else{
+          navbar.classList.add(navbarActive);
+          label.style.backgroundImage = "url(images/icon-close.svg)";
+        }
+      })
+    
+
+
+  </script>
+</body>
+</html>
