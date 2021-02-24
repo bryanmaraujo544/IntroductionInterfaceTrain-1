@@ -64,29 +64,22 @@
   </footer>
 
   <script>
-    
       const label = document.querySelector(".label");
-
 
       label.addEventListener('click', function(){
         const navbar = document.querySelector(".navbar_list");
         const navbarActive = "navbar_listActive";
         const label = document.querySelector(".label");
         
-        
         if(navbar.classList.contains(navbarActive)){
           navbar.classList.remove(navbarActive);
-          console.log("ola");
           label.style.backgroundImage = "url(images/icon-hamburger.svg)";
-
         }
         else{
           navbar.classList.add(navbarActive);
           label.style.backgroundImage = "url(images/icon-close.svg)";
         }
       })
-    
-
 
   </script>
 </body>
